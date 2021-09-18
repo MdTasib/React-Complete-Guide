@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Header from './Components/Layout/Header';
 
 const Module_11 = () => {
 	return (
-		<div>
-			<h2>Project 11</h2>
-		</div>
+		<Fragment>
+			<Header />
+		</Fragment>
 	);
 };
 
