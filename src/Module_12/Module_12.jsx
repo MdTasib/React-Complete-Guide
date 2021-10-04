@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './module_12.css';
 import Button from './components/UI/Button.js';
+import DemoOutput from './components/Demo/DemoOutput';
 
 const Module_12 = () => {
 	const [showParagraph, setShowParagraph] = useState(false);
@@ -14,7 +15,7 @@ const Module_12 = () => {
 	return (
 		<div className='app'>
 			<h1>Hi there!</h1>
-			{showParagraph && <p>This is new!</p>}
+			<DemoOutput show={false} />
 			<Button onClick={toggleParagraphHandler}>Toggle Paragraph!</Button>
 		</div>
 	);
