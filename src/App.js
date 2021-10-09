@@ -7,6 +7,7 @@ import Module_10 from './Module_10/Module_10';
 import { AuthContextProvider } from './Module_10/store/auth-context';
 import Module_11 from './Module_11/Module_11';
 import Module_12 from './Module_12/Module_12';
+import Module_13 from './Module_13/Module_13';
 
 function App() {
 	return (
@@ -16,7 +17,9 @@ function App() {
 			{/* <Module_08 /> */}
 			{/* <AuthContextProvider><Module_10 /></AuthContextProvider> */}
 			{/* <Module_11 /> */}
-			<Module_12 />
+			{/* <Module_12 /> */}
+
+			<Module_13 />
 		</div>
 	);
 }
