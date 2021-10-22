@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useState, useEffect, useCallback } from 'react';
 import './Module_14.css';
 import MoviesList from './components/MoviesList';
 
@@ -7,7 +7,7 @@ const Module_14 = () => {
 	const [isLoadin, setIsLoading] = useState(false);
 	const [error, setError] = useState(null);
 
-	async function fetchMoviesHandler() {
+	const fetchMoviesHandler = useCallback(async () => {
 		setIsLoading(true);
 		setError(null);
 
@@ -33,7 +33,11 @@ const Module_14 = () => {
 			setError(error.message);
 		}
 		setIsLoading(false);
-	}
+	}, []);
+
+	useEffect(() => {
+		fetchMoviesHandler();
+	}, [fetchMoviesHandler]);
 
 	let content = <p>Found No Movies</p>;
 
