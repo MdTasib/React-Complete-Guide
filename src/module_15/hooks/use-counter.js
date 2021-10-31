@@ -1,11 +1,15 @@
 import { useState, useEffect } from 'react';
 
-const useCounter = () => {
+const useCounter = (forwords = true) => {
 	const [counter, setCounter] = useState(0);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			setCounter(prevState => prevState + 1);
+			if (forwords) {
+				setCounter(prevState => prevState + 1);
+			} else {
+				setCounter(prevState => prevState - 1);
+			}
 		}, 1000);
 
 		return () => clearInterval(interval);
