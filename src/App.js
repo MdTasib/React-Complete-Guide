@@ -22,7 +22,7 @@ function App() {
 			{/* <Module_12 /> */}
 			{/* <Module_13 /> */}
 			{/* <Module_14 /> */}
-			<Module_15 />
+			{/* <Module_15 /> */}
 		</div>
 	);
 }
