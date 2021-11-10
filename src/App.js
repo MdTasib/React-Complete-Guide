@@ -10,6 +10,7 @@ import Module_12 from './Module_12/Module_12';
 import Module_13 from './Module_13/Module_13';
 import Module_14 from './Module_14/Module_14';
 import Module_15 from './Module_15/Module_15';
+import Module_16 from './Module_16/Module_16';
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 			{/* <Module_13 /> */}
 			{/* <Module_14 /> */}
 			{/* <Module_15 /> */}
+			<Module_16 />
 		</div>
 	);
 }
